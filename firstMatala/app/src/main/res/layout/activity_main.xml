@@ -8,11 +8,25 @@
     android:background="#E3FBFF"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Tic-Tac-Toe"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/turnTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="100dp"
         android:text="Turn X"
         android:textColor="@color/black"
         android:textSize="40sp"
@@ -35,15 +49,16 @@
 
             <Button
                 android:id="@+id/a1"
-                style="@style/column" />
+                style="@style/column"/>
+<!--                android:background="@android:drawable/alert_light_frame" -->
 
-            <View style="@style/verticalLine" />
+<!--            <View style="@style/verticalLine" />-->
 
             <Button
                 android:id="@+id/a2"
                 style="@style/column" />
 
-            <View style="@style/verticalLine" />
+<!--            <View style="@style/verticalLine" />-->
 
             <Button
                 android:id="@+id/a3"
@@ -51,7 +66,7 @@
 
         </LinearLayout>
 
-        <View style="@style/horizontalLine" />
+<!--        <View style="@style/horizontalLine" />-->
 
         <LinearLayout style="@style/row">
 
@@ -61,7 +76,7 @@
                 app:strokeColor="@color/black"
                 app:strokeWidth="5dp" />
 
-            <View style="@style/verticalLine" />
+<!--            <View style="@style/verticalLine" />-->
 
             <Button
                 android:id="@+id/b2"
@@ -69,7 +84,7 @@
                 app:strokeColor="@color/black"
                 app:strokeWidth="12dp" />
 
-            <View style="@style/verticalLine" />
+<!--            <View style="@style/verticalLine" />-->
 
             <Button
                 android:id="@+id/b3"
@@ -77,7 +92,7 @@
 
         </LinearLayout>
 
-        <View style="@style/horizontalLine" />
+<!--        <View style="@style/horizontalLine" />-->
 
         <LinearLayout style="@style/row">
 
@@ -85,13 +100,13 @@
                 android:id="@+id/c1"
                 style="@style/column" />
 
-            <View style="@style/verticalLine" />
+<!--            <View style="@style/verticalLine" />-->
 
             <Button
                 android:id="@+id/c2"
                 style="@style/column" />
 
-            <View style="@style/verticalLine" />
+<!--            <View style="@style/verticalLine" />-->
 
             <Button
                 android:id="@+id/c3"
